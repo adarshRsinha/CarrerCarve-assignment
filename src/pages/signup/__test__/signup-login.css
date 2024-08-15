@@ -1,0 +1,46 @@
+.authentication-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.backicon {
+  height: 50px;
+  aspect-ratio: 1/1;
+  font-size: 2.5rem;
+  color: var(--border-bold);
+}
+.backicon:hover {
+  color: #000;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-top: 1rem; /* If you want dots under the hoverable text */
+}
+/* Tooltip text */
+.tooltiptext {
+  font-size: 10px;
+  visibility: hidden;
+  width: 80px;
+  background-color: var(--color-blue);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 3px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  bottom: -1rem;
+  left: -1.1rem;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

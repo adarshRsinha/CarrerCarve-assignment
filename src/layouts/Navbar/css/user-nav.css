@@ -1,0 +1,47 @@
+.logo-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-logo {
+  height: 25px;
+}
+.navigations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+  color: var(--secondary-font-color);
+  font-weight: 400;
+}
+.nav:hover {
+  color: #fff;
+}
+.nav-active {
+  color: #fff;
+}
+.nav-text {
+  text-transform: capitalize;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.logout {
+  color: var(--color-red);
+}
+.logout:hover {
+  color: var(--color-red);
+  font-weight: 500;
+}

@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --border-light: #d9d9d9;
+  --color-yellow: #fbbc05;
+  --color-red: #ea4335;
+  --color-green: #34a853;
+  --color-blue: #4285f4;
+  --secondary-font-color: #707070;
+  --border-bold: #afafaf;
+  --color-dark-blue: #081225;
+  --gray-bg: #f3f2f2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+p {
+  color: var(--secondary-font-color);
+}
+a {
+  font-weight: 500;
+  color: #000;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #4285f4;
+}
+/*............................................. Scrtoll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue);
+}

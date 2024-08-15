@@ -1,0 +1,123 @@
+.video-main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.video-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+.my-video-screen {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  bottom: 5rem;
+  width: 280px;
+  aspect-ratio: 16/9;
+  background-color: #222834;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 19px 38px, rgba(0, 0, 0, 0.5) 0px 15px 12px;
+  border-radius: 5px;
+  background-size: contain;
+  overflow: hidden;
+  object-fit: contain;
+}
+.user-video-screen {
+  position: relative;
+  /* width: 100%; */
+  height: 85%;
+  aspect-ratio: 16/9;
+  background-color: var(--color-dark);
+  border: 1px dotted var(--color-blue);
+  border-radius: 5px;
+  background-size: contain;
+  overflow: hidden;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-mic {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+}
+.my-no-video-screen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.no-video-screen {
+  height: 85%;
+  aspect-ratio: 16/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.show-user-details {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.show-user-title {
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.button-sets {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+}
+.dial-in-btn {
+  border-radius: 80px;
+}
+
+.control-btn {
+  padding: 1rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  /* border: 0.5px solid #000; */
+}
+.control-btn:hover {
+  outline: 1px solid var(--border-light);
+}
+.btn-round {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.control-icon {
+  font-size: 1.2rem;
+}

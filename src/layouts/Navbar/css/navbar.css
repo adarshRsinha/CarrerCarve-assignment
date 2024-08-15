@@ -1,0 +1,37 @@
+.navbar{
+  position: absolute;
+  width: 100%;
+  top:0;
+  left: 0;
+  padding: 1.5rem 0;
+  z-index: 1000;
+}
+.nav-sticky{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left: 0;
+  background-color: #fff;
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  animation: DropDown 0.3s linear;
+}
+@keyframes DropDown {
+  0%{transform: translateY(-80px);}
+  100%{transform: translateY(0);}
+}
+.nav-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo{
+  width: 150px;
+}
+
+@media (max-width:300px){
+  .nav-logo{
+    width: 120px;
+  }
+}
