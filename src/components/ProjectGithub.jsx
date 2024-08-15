@@ -31,7 +31,7 @@ const ProjectGithub = () => {
           >
             Please visit project
             <a
-              href="https://github.com/akshayxemo/intervuMe-web"
+              href="https://github.com/adarshRsinha/CarrerCarve-assignment"
               target="blank"
               className="git-link"
             >
